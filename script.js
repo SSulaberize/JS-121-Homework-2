@@ -25,6 +25,7 @@ numberfunction(10, 50, 6, 7, 8, 11, 6, 3, 9);
 
 
 
+
 // სავარჯიშო 3
 let user = {
     firstname: 'giorgi',
@@ -36,6 +37,20 @@ let user = {
 for (let [key,value] of object.entries(user)) {
     console.log(key,value);
 }
+
+
+
+// სავარჯიშო 4
+let bignumber = function (...numbers) {
+    let numfunct = 0;
+    for (let a of numbers){
+        if (a > numfunct){
+            numfunct = a
+        }
+    }
+    return numfunct
+}
+console.log(bignumber (2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8));
 
 
 
