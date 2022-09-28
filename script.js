@@ -25,7 +25,6 @@ numberfunction(10, 50, 6, 7, 8, 11, 6, 3, 9);
 
 
 
-
 // სავარჯიშო 3
 let user = {
     firstname: 'giorgi',
@@ -34,9 +33,17 @@ let user = {
     isloggedin: true
   }
 
-for (let [key,value] of object.entries(user)) {
-    console.log(key,value);
+function username(user){
+    if(user.isloggedin){
+        return user.firstname + ' ' + user.lastname
+    }
+    else {
+        return false;
+    }
 }
+let result = username(user);
+
+console.log(result)
 
 
 
